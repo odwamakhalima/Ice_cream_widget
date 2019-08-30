@@ -10,9 +10,6 @@ var myErr = document.querySelector('.myErr')
 
 var count = document.querySelector('.count')
 
-var myData = document.querySelector('.userData')
-var templateSource = document.querySelector(".userTemplate").innerHTML;
-var userTemplate = Handlebars.compile(templateSource);
 
 var factoryCream = creams()
 var arr = []
@@ -35,9 +32,14 @@ function getIt() {
         var arr2 = arr[j]
     }
     factoryCream.add(flavs.value, conts.value, arr2)
-
+if(factoryCream.getCream().length<=1){
     show.innerHTML = factoryCream.getCream()
+}
+ console.log( factoryCream.getCream().length);
+ if(factoryCream.getCream2().length<=1){
     show2.innerHTML = factoryCream.getCream2()
+}
+    
     show3.innerHTML = factoryCream.getCream3()
   
     myErr.innerHTML = factoryCream.errorM()
