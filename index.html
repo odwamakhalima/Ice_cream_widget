@@ -9,10 +9,6 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
     <script type="text/x-template" class="userTemplate">
-        {{#each  result}}
-
-        {{/each}}
-       
     </script>
 </head>
 
@@ -35,7 +31,7 @@
             <option value="paper cup">paper cup</option>
         </select>
 
-        <div class="center" style="padding:10px;">
+        <div class="center" style="padding:1em;">
         <label>Crumbed peanuts
             <input type="checkbox" class="toppings" name="all" value='Crumbed peanuts'>
             <span class="checkmark"></span>
@@ -69,14 +65,15 @@
     </div>
 
 
-    <div>
-        <div style="padding:1em;">
+    <div class="center">
+        <div style="padding:1em;" class="center">
 
-            <button button id="button" type="button" class="button-primary getBtn" style="width:106px;">Add Ice
-                Cream</button>
+            <button button id="button" type="button" class="button-primary getBtn" >Add Topping</button>
+                <button button id="button" type="button" class="button-primary priceBtn">Ice
+                    Cream Price</button>
 
         </div>
-        <div style="padding:1em;">
+        <div style="padding:1em;" class="center">
             <div class="show" style="padding:6px;">
 
             </div>
@@ -91,12 +88,12 @@
         <div class="count" style="padding:1em;">
 
         </div>
+        <div class="myErr" style="padding:1em;">
 
+
+        </div>
     </div>
-    <div class="myErr" style="padding:1em;">
 
-
-    </div>
 
 </body>
 <script src="cream.js"></script>

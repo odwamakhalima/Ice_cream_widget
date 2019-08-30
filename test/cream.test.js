@@ -22,15 +22,32 @@ describe("The Ice Cream Function", function(){
 
     });
 
-    it("should be the list of the selected flavour,container and a list of topping", function(){
+    it("should return the value of the Vanilla", function(){
+        var factoryCream = creams()
+
+        factoryCream.add('Vanilla','Sugar Cone',['Oreo','Astros'])
+        factoryCream.getCream()
+
+        assert.deepEqual(14,factoryCream.count() )
+
+    });
+    it("should return the value of the Vanilla plus sugar cone", function(){
         var factoryCream = creams()
 
         factoryCream.add('Vanilla','Sugar Cone',['Oreo','Astros'])
         factoryCream.getCream()
         factoryCream.getCream2()
-        //factoryCream.getCream3()
 
-        assert.deepEqual(34,factoryCream.count() )
+        assert.deepEqual(22,factoryCream.count() )
+
+    });
+
+    it("should return an error if nothing is entered", function(){
+        var factoryCream = creams()
+
+        factoryCream.add('','','')
+
+        assert.deepEqual('Please Select flavour and Container',factoryCream.errorM() )
 
     });
 });

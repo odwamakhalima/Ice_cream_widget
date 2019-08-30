@@ -35,11 +35,14 @@ function getIt() {
     show.innerHTML = factoryCream.getCream()
     show2.innerHTML = factoryCream.getCream2()
     show3.innerHTML = factoryCream.getCream3()
-    count.innerHTML = 'The Total Price Is ' + ' R' + factoryCream.count()
-
+  
     myErr.innerHTML = factoryCream.errorM()
     clearError()
 }
 
+function getPrice(){
+    count.innerHTML = 'The Total Price Is ' + ' R' + factoryCream.count()
+}
 
+priceBtn.addEventListener('click',getPrice)
 getBtn.addEventListener('click', getIt)
