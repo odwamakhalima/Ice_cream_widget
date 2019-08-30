@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Ice Cream</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+    <script type="text/x-template" class="userTemplate">
+        {{#each  result}}
+
+        {{/each}}
+       
+    </script>
+</head>
+
+<body>
+    <div class="center">
+        <h1>Ice Cream</h1>
+    </div>
+    <div class="center" style="padding:2em;">
+        <select class="flavours">
+            <option value="">Select flavours</option>
+            <option value="Chocolate">Chocolate</option>
+            <option value="Strawberry">Strawberry</option>
+            <option value="Vanilla">Vanilla</option>
+        </select>
+
+        <select class="containers">
+            <option value="">Select Container</option>
+            <option value="Plain Cone"> Plain Cone</option>
+            <option value="Sugar Cone">Sugar Cone</option>
+            <option value="paper cup">paper cup</option>
+        </select>
+
+        <div class="center" style="padding:10px;">
+        <label>Crumbed peanuts
+            <input type="checkbox" class="toppings" name="all" value='Crumbed peanuts'>
+            <span class="checkmark"></span>
+        </label>
+        <label>Caramal dip
+            <input type="checkbox" class="toppings" name="all" value='Caramal dip'>
+            <span class="checkmark"></span>
+        </label>
+        <label class="toppings">Chocolate Dip
+            <input type="checkbox" name="all" value='Chocolate Dip'>
+            <span class="checkmark"></span>
+        </label>
+        <label class="toppings" value='Smarties'>Smarties
+            <input type="checkbox" name="all" class="toppings" value='Smarties'>
+            <span class="checkmark"></span>
+        </label>
+        <label>Oreos
+            <input type="checkbox" name="all" class="toppings" value='Oreos'>
+            <span class="checkmark"></span>
+        </label><label value='Astros'>Astros
+            <input type="checkbox" name="all" class="toppings" value='Astros'>
+            <span class="checkmark"></span>
+        </div>
+
+
+
+
+    </div>
+
+
+    </div>
+
+
+    <div>
+        <div style="padding:1em;">
+
+            <button button id="button" type="button" class="button-primary getBtn" style="width:106px;">Add Ice
+                Cream</button>
+
+        </div>
+        <div style="padding:1em;">
+            <div class="show" style="padding:6px;">
+
+            </div>
+            <div class="show2" style="padding:6px;">
+
+            </div>
+            <div class="show3" style="padding:6px;">
+
+            </div>
+        </div>
+
+        <div class="count" style="padding:1em;">
+
+        </div>
+
+    </div>
+    <div style="padding:1em;">
+
+
+    </div>
+
+</body>
+<script src="cream.js"></script>
+<script src="cream-Dom.js"></script>
+
+</html>
