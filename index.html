@@ -9,6 +9,26 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
     <script type="text/x-template" class="userTemplate">
+        <table>
+            <tr>
+              <td>flavour</td>
+              <td>{{flavr}}</td>
+            </tr>
+            <tr>
+              <td>Container</td>
+              <td>{{contar}}</td>
+            </tr>
+            <tr>
+                <tr>
+                <td>Toppings</td>
+                <td>{{topper}}</td>
+                </tr>
+                <tr>
+                    <td>counter</td>
+                    <td>{{count}}</td>
+                    </tr>
+            </table>
+       
     </script>
 </head>
 
@@ -32,28 +52,28 @@
         </select>
 
         <div class="center" style="padding:1em;">
-        <label>Crumbed peanuts
-            <input type="checkbox" class="toppings" name="all" value='Crumbed peanuts'>
-            <span class="checkmark"></span>
-        </label>
-        <label>Caramal dip
-            <input type="checkbox" class="toppings" name="all" value='Caramal dip'>
-            <span class="checkmark"></span>
-        </label>
-        <label class="toppings">Chocolate Dip
-            <input type="checkbox" name="all" value='Chocolate Dip'>
-            <span class="checkmark"></span>
-        </label>
-        <label class="toppings" value='Smarties'>Smarties
-            <input type="checkbox" name="all" class="toppings" value='Smarties'>
-            <span class="checkmark"></span>
-        </label>
-        <label>Oreos
-            <input type="checkbox" name="all" class="toppings" value='Oreos'>
-            <span class="checkmark"></span>
-        </label><label value='Astros'>Astros
-            <input type="checkbox" name="all" class="toppings" value='Astros'>
-            <span class="checkmark"></span>
+            <label>Crumbed peanuts
+                <input type="checkbox" class="toppings" name="all" value='Crumbed peanuts'>
+                <span class="checkmark"></span>
+            </label>
+            <label>Caramal dip
+                <input type="checkbox" class="toppings" name="all" value='Caramal dip'>
+                <span class="checkmark"></span>
+            </label>
+            <label class="toppings">Chocolate Dip
+                <input type="checkbox" name="all" value='Chocolate Dip'>
+                <span class="checkmark"></span>
+            </label>
+            <label class="toppings" value='Smarties'>Smarties
+                <input type="checkbox" name="all" class="toppings" value='Smarties'>
+                <span class="checkmark"></span>
+            </label>
+            <label>Oreos
+                <input type="checkbox" name="all" class="toppings" value='Oreos'>
+                <span class="checkmark"></span>
+            </label><label value='Astros'>Astros
+                <input type="checkbox" name="all" class="toppings" value='Astros'>
+                <span class="checkmark"></span>
         </div>
 
 
@@ -68,9 +88,9 @@
     <div class="center">
         <div style="padding:1em;" class="center">
 
-            <button button id="button" type="button" class="button-primary getBtn" >Add Topping</button>
-                <button button id="button" type="button" class="button-primary priceBtn">Ice
-                    Cream Price</button>
+            <button button id="button" type="button" class="button-primary getBtn">Add Topping</button>
+            <button button id="button" type="button" class="button-primary priceBtn">Ice
+                Cream Price</button>
 
         </div>
         <div style="padding:1em;" class="center">

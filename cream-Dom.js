@@ -10,6 +10,10 @@ var myErr = document.querySelector('.myErr')
 
 var count = document.querySelector('.count')
 
+var myData = document.querySelector('.userData')
+var templateSource = document.querySelector(".userTemplate").innerHTML;
+var userTemplate = Handlebars.compile(templateSource);
+
 var factoryCream = creams()
 var arr = []
 
